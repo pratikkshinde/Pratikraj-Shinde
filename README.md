@@ -22,23 +22,6 @@ The site is built completely from scratch using **Semantic HTML, Vanilla CSS (Gr
 - **Backend (API Ready):** Pre-configured Google Apps Script (`js/api.js`) to handle contact form submissions into Google Sheets.
 
 
-## 🔗 Deployment
-
-This project requires no build steps (no Webpack, Vite, or npm installs). It can be directly hosted on any static hosting platform:
-- **Vercel**
-- **Netlify**
-- **GitHub Pages**
-
-Simply connect your GitHub repository to your preferred hosting provider, and the site will be live instantly.
-
-## ✉️ Contact Form & API Configuration
-
-The contact form is designed to work with Google Apps Script to save responses directly into a Google Sheet.
-1. Deploy your Google Apps Script (`Code.gs`) as a Web App.
-2. Copy the resulting `/exec` URL.
-3. Open `js/api.js` and paste your URL into the `API_URL` constant.
-4. The form will now securely send messages to your Google Sheet without page reloads.
-
 ## 👨‍💻 Author
 
 **Pratikraj Shinde**
