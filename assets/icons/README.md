@@ -1,0 +1,1 @@
+Reserved for project-specific local icons. The current interface uses lightweight text symbols and does not require an icon library.

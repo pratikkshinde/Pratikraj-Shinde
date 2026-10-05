@@ -1,0 +1,1 @@
+The hero portrait is stored as `pratikraj-shinde.jpg`. Add project screenshots here if you want images in the project cards; keep meaningful alt text in `index.html`.

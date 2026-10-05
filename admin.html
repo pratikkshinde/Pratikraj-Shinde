@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080909">
+  <title>Admin - Pratikraj Shinde</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</head>
+
+<body>
+  <header class="site-header" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 999999; padding-top: 2rem; pointer-events: none;">
+    <div class="container" style="pointer-events: auto;">
+      <button onclick="sessionStorage.clear(); window.location.href='index.html';" class="button button-outline" style="display: inline-flex; align-items: center; gap: 0.5rem; border-color: var(--border); background-color: var(--background); cursor: pointer;">
+        <span aria-hidden="true">←</span> Back to Portfolio
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content" style="min-height: 80vh;">
+    <section class="section-shell" id="admin" aria-labelledby="admin-title">
+      <div class="container admin-container">
+        <div class="section-heading">
+          <p class="eyebrow">Private area</p>
+          <h2 class="section-title" id="admin-title">Admin <span class="muted-heading">inbox.</span></h2>
+        </div>
+        <div class="admin-login" id="admin-login-panel">
+          <form id="admin-login-form" class="admin-login-form">
+            <div class="field"><label for="admin-username">Username</label><input id="admin-username" name="username"
+                autocomplete="username" required></div>
+            <div class="field"><label for="admin-password">Password</label><input id="admin-password" name="password"
+                type="password" autocomplete="current-password" required></div>
+            <button class="button button-primary" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="admin-login-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="admin-dashboard hidden" id="admin-dashboard" aria-live="polite">
+          <div class="dashboard-heading">
+            <div>
+              <p class="eyebrow">Private messages</p>
+              <h3>User responses <span class="response-count" id="response-count">0</span></h3>
+            </div>
+            <div class="dashboard-actions"><button class="button button-outline" id="refresh-responses"
+                type="button"><span aria-hidden="true">↻</span> Refresh</button><button class="button button-quiet"
+                id="admin-logout" type="button">Log out <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <p class="dashboard-status" id="dashboard-status" role="status" aria-live="polite"></p>
+          <div class="response-table-wrap" id="response-table-wrap">
+            <table class="response-table">
+              <caption class="visually-hidden">Contact form responses</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Message</th>
+                  <th scope="col">Received</th>
+                </tr>
+              </thead>
+              <tbody id="response-table-body"></tbody>
+            </table>
+          </div>
+          <div class="response-cards" id="response-cards" aria-label="Contact form responses"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

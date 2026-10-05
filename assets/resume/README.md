@@ -1,0 +1,1 @@
+Place your own `resume.pdf` in this folder before publishing. The resume links in `index.html` use `assets/resume/resume.pdf`; this repository does not include personal resume details.
