@@ -21,39 +21,6 @@ The site is built completely from scratch using **Semantic HTML, Vanilla CSS (Gr
 - **JavaScript (ES6+):** Vanilla JS Modules, DOM Manipulation, Event Listeners, Intersection Observer API.
 - **Backend (API Ready):** Pre-configured Google Apps Script (`js/api.js`) to handle contact form submissions into Google Sheets.
 
-## 📂 Folder Structure
-
-```text
-.
-├── index.html          # Main portfolio page
-├── admin.html          # Admin dashboard UI
-├── css/
-│   ├── style.css       # Core styling, variables, typography, animations
-│   └── responsive.css  # Media queries and responsive adjustments
-├── js/
-│   ├── main.js         # Core logic (navigation, search, smooth scroll)
-│   ├── contact.js      # Contact form handling and validation
-│   ├── admin.js        # Admin login and dashboard logic
-│   └── api.js          # API client for form submissions
-├── assets/
-│   ├── images/         # Project thumbnails, portraits, etc.
-│   ├── icons/          # Favicon (SVG) and other icons
-│   └── resume/         # Downloadable PDF resume
-└── README.md           # Project documentation
-```
-
-## 🔧 Local Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/pratikkshinde/pratikk.git
-   ```
-2. **Open the project in VS Code.**
-3. **Serve Locally:** 
-   Because the project uses JavaScript ES Modules (`<script type="module">`), it must be served over HTTP rather than opening the file directly.
-   - Use the **Live Server** extension in VS Code, OR
-   - Run a quick Python server from your terminal: `python -m http.server 8080`
-4. Open `http://localhost:8080` in your browser.
 
 ## 🔗 Deployment
 
